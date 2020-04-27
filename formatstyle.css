@@ -18,7 +18,7 @@ table {
   }
 
 body{
-  background--image: url(moldau.jpg);
+  background-image: url(moldau.jpg);
 }
 #special {
   color:gray;
