@@ -11,7 +11,7 @@ body {
   background-image: url(moldau.jpg);
   background-repeat: no-repeat;
   background-clip: padding-box; /*content-box;*/
-  background-position: top; /*right top;*/
+  background-position: top;; /*right top;*/
   background-attachment: scroll; /*fixed */
 }
 pre {
@@ -19,8 +19,8 @@ pre {
   padding: 5px 5px;
 }
 audio {
-  height: 25px;
-  width: 100px;
+  height: 30px;
+  /* width: 175px; */
   opacity: 0.6;
 }
 img {
@@ -37,24 +37,30 @@ table, th, td {
 table:hover {
   background-color: lightyellow;
   border:1px solid black;
-  padding: 10px 10px;
+  padding: -10px -10px;
   width: 250px;
   color: blue;
   text-align: center;
 }
+
 #divpoem {
   float: right;
+  box-sizing: border-box;
   border-radius: 8px;
   background-color: tomato;
   color: white;
   border: 1px;
-  text-align: left;
-  margin: 0;
-  padding: 3px;
-  width: 27%;
+  align: auto;
+  margin: auto;
+  padding: 0 0 0 3px;
+  width: auto;
   opacity: 0.4;
-  /* position: fixed; */
+  /* position: relative; */
+  display: flex;
+  justify-content: left;
+  align-items: left;
   transition: opacity 3s;
+  cursor: pointer;
   /* background-color: #40B3DF; */
 }
 #divpoem:hover {
@@ -70,6 +76,25 @@ table:hover {
   color:gray;
   background-color:powderblue;
   width:10%;
+  cursor: pointer;
+}
+#Romania {
+  float: inherit;
+  box-sizing: border-box;
+  align: auto;
+  /* position z-index: -1 ; */
+  color: white;
+  align: auto;
+  margin: auto;
+  padding: 0 0 0 3px;
+  width: 250px;
+  /* position: static relative fixed absolute sticky left: 0px;  top: 0px; z-index: -1;
+  overflow: visible (Default) hidden scroll auto;
+  overflow-x overflow-y:
+  float: left right none inherit  */
+  display: flex;
+  transition: opacity 3s;
+  cursor: pointer;
 }
 .intro{
   width: 23%;
@@ -93,3 +118,4 @@ table:hover {
   color: white;
   padding: 20px;
 }
+
