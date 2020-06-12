@@ -10,6 +10,7 @@
       <!-- <meta http-equiv="refresh" content="30"> -->
       <link rel="shortcut icon" href="https://atom.io/favicon.ico"/>
       <link rel="stylesheet" href="firststyle.css" type="text/css"/>
+      <script src="myFirstScript.js"></script>
     </head>
     <body>
       <h1>&#128511; WETAL's first website &#128512 &#128058; &#128062; WETAL - METAL ⚖</h1>
@@ -19,7 +20,7 @@
         Tchaikovski, Prokofiev, Schostakovich, Albinone, Paganini, Satie, Debussy, Strauss, Purcell, Brahms, Rachmaninov,Dvorak, Khachaturean
       </h4>
     <img style="width:100px"src="https://torrindex.net/images/tpb.jpg"><br>
-    <div id="divpoem"><pre>
+    <div onclick="bigText()" id="divpoem"><pre>
       Hey you, out there in the cold
       Getting lonely, getting old
       Can you feel me?
@@ -42,11 +43,6 @@
 
     <!-- <p id="myP">Hello World!</p> -->
     <button onclick="displayResult()" id="myP">Click to<sub>(see what happends)</sub></button>
-    <script>
-    function displayResult() {
-      document.getElementById("myP").innerHTML = "You will like JAVASCRIPT!";
-      }
-      </script>
 
     <p class="intro"><b>Un text oarecare de proba tip bold (BOLD)</b><br><em>si la fel text dar din rind nou si 'italic' (V ITALIK)</em></p>
     <p id="special"><abbr title="Vitalie Ion Paraschiv">VIP</abbr></p>
@@ -85,10 +81,14 @@
                   <td>3 luni</td>
                 </tr>
               </tbody>
-            </table><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </table><br><br><br>
 
         <!-- <img src="moldau.jpg" alt="Moldau" width="600"> -->
-        <img src="nature2.jpg" alt="Romania" width="1250px">
+        <div>
+          <img id="Romania" src="nature2.jpg" alt="Romania" onmouseover="bigPicture()"
+          onmouseout="smallPicture()">
+        </div>
 
   </body>
 </html>
+
